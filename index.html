@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nyimbo Za Kristo App</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f0f0f0;padding:20px}
+h1{color:#1a5c2a}
+button{background:#1a5c2a;color:white;padding:15px 25px;border:none;border-radius:10px;margin:10px;font-size:18px;width:90%}
+input{padding:12px;width:80%;border-radius:10px;border:1px solid #ccc;font-size:16px}
+.card{background:white;padding:20px;border-radius:15px;margin-top:20px}
+</style>
+</head>
+<body>
+<h1>🎵 Nyimbo Za Kristo</h1>
+<p>App ya SDA - Nyimbo & Lesson</p>
+
+<input id="num" type="number" placeholder="Weka namba ya wimbo e.g. 123">
+<br><br>
+<button onclick="tafuta()">TAFUTA WIMBO</button>
+
+<div class="card" id="result">Wimbo utaonekana hapa...</div>
+
+<button onclick="window.open('https://www.sabbath.school')">📖 LESSON QUARTERLY</button>
+<button onclick="window.open('https://www.nyimbo-za-kristo.com')">📚 NYIMBO ZOTE PDF</button>
+
+<script>
+function tafuta(){
+ let n=document.getElementById('num').value;
+ if(!n){alert('Weka namba kwanza');return;}
+ document.getElementById('result').innerHTML = '<h2>Nyimbo No. '+n+'</h2><p>Bonyeza hapa kusoma...</p><a href="https://www.google.com/search?q=Nyimbo+Za+Kristo+'+n+'">Soma Wimbo '+n+'</a>';
+}
+</script>
+</body>
+</html>
